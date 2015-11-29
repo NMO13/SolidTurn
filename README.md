@@ -8,12 +8,13 @@ SolidTurn is a simulation software which simulates the cutting process of CNC (c
 - Real-time Simulation
 - NC code editor
 - NC code verification
+- Real-time verification of tool and swivel
 
 ## Used Technologies
 
 The application is purely written in C# but uses the following third party libraries:
 - [OpenTK] (www.opentk.com), an OpenGL wrapper for C#
-- [Microsoft Enterprise Library (https://msdn.microsoft.com/en-us/library/ff648951.aspx)] is used for logging and exception handling
+- [Microsoft Enterprise Library] (https://msdn.microsoft.com/en-us/library/ff648951.aspx) is used for logging and exception handling
 - [Dockpanel suite] (http://dockpanelsuite.com/) to enhance the Winforms GUI with docking support
 - [This](https://github.com/govert/RobustGeometry.NET/wiki/Floating-point-on-.NET) floating point arithmetic classes , which are based on [this](http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf) paper, are used to remedy floating point errors.
 
@@ -25,5 +26,5 @@ The application is purely written in C# but uses the following third party libra
 ## The Author
 SolidTurn was originally designed and developed by Martin Ennemoser and Florian Ennemoser in 2014
 
-martin.ennemoser@gmx.at
-florian.ennemoser@gmx.at
+martin.ennemoser@nmo-online.com
+florian.ennemoser@nmo-online.com
