@@ -1,0 +1,6 @@
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Mesh.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Mesh.csprojResolveAssemblyReference.cache
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.dll.config
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Mesh.dll

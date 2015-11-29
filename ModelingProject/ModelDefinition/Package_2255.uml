@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7886bcb6-a42c-4cf8-b025-058f512419b5"
+  name="Machine_Stuff" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7adc37fc-c6a0-47a1-bfd2-026db4b2c828"
+        name="TrajectoryCalculator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7b90990f-b99f-4d3c-80f6-abbcf277346b"
+        name="TSVCalculator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="af58cfdd-22ec-4991-8c86-ebde0ff7f8e0"
+        LastKnownName="Subtraction"
+        LastKnownLocation="Package_2320.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b86186c2-eab6-41be-b876-1025253d8c97"
+        name="Processor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="27d47bf0-1300-4edd-bf87-fa2e5be2edfe"
+            isDerived="false"
+            sourceEndRoleName="Processor"
+            targetEndRoleName="TrajectoryCalculator"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7adc37fc-c6a0-47a1-bfd2-026db4b2c828"
+              LastKnownName="TrajectoryCalculator"
+              LastKnownLocation="Package_2255.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9290573b-8bcb-4528-b8ca-2efc3abb595a"
+                  name="Processor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68526cb2-a268-4816-9ef8-2ae44504fd56"
+                  name="TrajectoryCalculator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8ba7da6e-f74b-4b1d-87e5-683a6761fa7c"
+            isDerived="false"
+            sourceEndRoleName="Processor"
+            targetEndRoleName="TSVCalculator"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b90990f-b99f-4d3c-80f6-abbcf277346b"
+              LastKnownName="TSVCalculator"
+              LastKnownLocation="Package_2255.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbd2c631-a664-4d3d-b24a-4eed6bc4fe69"
+                  name="Processor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df05f312-a204-4570-8a58-f810a5132475"
+                  name="TSVCalculator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5bb4a02f-6e2e-4406-b191-cc45958a4157"
+            isDerived="false"
+            sourceEndRoleName="Processor"
+            targetEndRoleName="MeshSubtractor"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8dce6269-a33f-4937-837a-d7408d95af72"
+              LastKnownName="MeshSubtractor"
+              LastKnownLocation="Package_2320.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a249bc80-92cf-4797-ba7f-0c89641d5470"
+                  name="Processor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e3a1cc5-2696-40bc-8b17-a29214f15e84"
+                  name="MeshSubtractor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5dafd5fe-c026-4fe9-89cc-8c3b08b22b0e"
+            isDerived="false"
+            sourceEndRoleName="Processor"
+            targetEndRoleName="Document"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7c85c711-e3e0-4fc6-ac51-9d3a023badec"
+              LastKnownName="Document"
+              LastKnownLocation="Package_2243.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74e37fa4-4a67-4458-94a4-297506b8d6e6"
+                  name="Processor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3201a38f-8017-4310-81c9-5f9d6d027fdf"
+                  name="Document"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

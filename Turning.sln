@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidTurn", "Simulation\SolidTurn.csproj", "{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry_Mesh3D", "Mesh\Geometry_Mesh3D.csproj", "{0EE28051-F9D7-4F1A-B056-F26B79A396B1}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "ModelingProject\ModelingProject.modelproj", "{1DC8425D-DCC2-48C6-B864-5D4F12A413D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D781B1C4-50A5-4F1A-8C5F-EBC6393FF163}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://martinennemoser.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ModelingProject\\ModelingProject.modelproj
+		SccProjectName1 = ModelingProject
+		SccLocalPath1 = ModelingProject
+		SccProjectUniqueName2 = Mesh\\Geometry_Mesh3D.csproj
+		SccProjectName2 = Mesh
+		SccLocalPath2 = Mesh
+		SccProjectUniqueName3 = Simulation\\SolidTurn.csproj
+		SccProjectName3 = Simulation
+		SccLocalPath3 = Simulation
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE28051-F9D7-4F1A-B056-F26B79A396B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE28051-F9D7-4F1A-B056-F26B79A396B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE28051-F9D7-4F1A-B056-F26B79A396B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE28051-F9D7-4F1A-B056-F26B79A396B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC8425D-DCC2-48C6-B864-5D4F12A413D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC8425D-DCC2-48C6-B864-5D4F12A413D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC8425D-DCC2-48C6-B864-5D4F12A413D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC8425D-DCC2-48C6-B864-5D4F12A413D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

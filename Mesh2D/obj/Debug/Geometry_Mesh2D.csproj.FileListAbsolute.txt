@@ -1,0 +1,10 @@
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\bin\Debug\Mesh2D.exe.config
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\bin\Debug\Mesh2D.exe
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\bin\Debug\Mesh2D.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\obj\Debug\Mesh2D.Properties.Resources.resources
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\obj\Debug\Geometry_Mesh2D.csproj.GenerateResource.Cache
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\obj\Debug\Mesh2D.exe
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\obj\Debug\Mesh2D.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\bin\Debug\GeometryLib.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\bin\Debug\GeometryLib.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh2D\obj\Debug\Geometry_Mesh2D.csprojResolveAssemblyReference.cache

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b2db0779-429b-4373-8e45-0720f5cef6b0"
+  name="Rendering" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="217b9278-fc73-4bde-a4d3-eb257b79bfe5"
+        name="Renderer"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4d116b3c-d6c0-4930-b677-8ead9b77469d"
+        name="OpenGLRenderer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c2e273a1-6749-415c-a4ab-534457c1c09f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="217b9278-fc73-4bde-a4d3-eb257b79bfe5"
+              LastKnownName="Renderer"
+              LastKnownLocation="Package_2302.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="55839759-cd9b-4c9a-a3e8-d92f635078f0"
+            isDerived="false"
+            sourceEndRoleName="OpenGLRenderer"
+            targetEndRoleName="Processor"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b86186c2-eab6-41be-b876-1025253d8c97"
+              LastKnownName="Processor"
+              LastKnownLocation="Package_2255.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b6c5869-c974-4fb9-9494-3cfc74d0ddae"
+                  name="OpenGLRenderer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56c3e5a5-52f4-4d81-aa41-ca8dbf3148ea"
+                  name="Processor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="09560b16-18ec-48b8-ae88-e38b750666e6"
+        name="IRender"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

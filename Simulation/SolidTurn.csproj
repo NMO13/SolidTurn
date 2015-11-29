@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC6D7C21-CDC6-4E9E-8F90-3565B53D0C21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mesh</RootNamespace>
+    <AssemblyName>SolidTurn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="2DMeshStructuresLib">
+      <HintPath>..\..\Testing_Environment\ConcentricMeshLib\bin\Debug\2DMeshStructuresLib.dll</HintPath>
+    </Reference>
+    <Reference Include="3DMeshStructureLib">
+      <HintPath>..\..\Testing_Environment\3DMeshStructureLib\bin\Debug\3DMeshStructureLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DataStructures">
+      <HintPath>..\..\Testing_Environment\DataStructures\bin\Debug\DataStructures.dll</HintPath>
+    </Reference>
+    <Reference Include="GeometryLib">
+      <HintPath>..\..\Testing_Environment\2DPolyClipping\bin\Debug\GeometryLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>third_party\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <HintPath>third_party\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>third_party\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>third_party\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>third_party\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.Compatibility, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>third_party\OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>third_party\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>third_party\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder\JawChuckBuilder.cs" />
+    <Compile Include="CNC_Turning\Code\Sinumerik\SinumerikProgram.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\ArcCalculator.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\Constants.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\Processor.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\ToolSet.cs" />
+    <Compile Include="Config\Initializer.cs" />
+    <Compile Include="GeoObjectStuff\GeoObjectComposite.cs" />
+    <Compile Include="GeoObjectStuff\JawChuck.cs" />
+    <Compile Include="GeoObjectStuff\RoughPartGeoObject.cs" />
+    <Compile Include="GeoObjectStuff\Tool.cs" />
+    <Compile Include="Builder\ToolBuilder.cs" />
+    <Compile Include="GeoObjectStuff\VBOGeoObject.cs" />
+    <Compile Include="GUI\ActionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ActionView.Designer.cs">
+      <DependentUpon>ActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Custom_Forms\OutputMessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Custom_Forms\OutputMessageControl.Designer.cs">
+      <DependentUpon>OutputMessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DebugView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DebugView.Designer.cs">
+      <DependentUpon>DebugView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RoughPartSpecDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RoughPartSpecDialog.Designer.cs">
+      <DependentUpon>RoughPartSpecDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ToolDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ToolDialog.Designer.cs">
+      <DependentUpon>ToolDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GlobalStateModel.cs" />
+    <Compile Include="Rendering\Animation.cs" />
+    <Compile Include="Rendering\PerformanceCounter.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\TrajectoryCalculator.cs" />
+    <Compile Include="CNC_Turning\Code\AbstractProgram.cs" />
+    <Compile Include="CNC_Turning\Interpretation\Interpreter.cs" />
+    <Compile Include="GUI\CodeExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CodeExplorer.Designer.cs">
+      <DependentUpon>CodeExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\OutputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RenderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RenderWindow.Designer.cs">
+      <DependentUpon>RenderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rotation\ArcBall.cs" />
+    <Compile Include="Builder\AbstractGeoObjectBuilder.cs" />
+    <Compile Include="GeoObjectStuff\CoordinateAxis.cs" />
+    <Compile Include="Builder\GeoObjectBuilder.cs" />
+    <Compile Include="Model\DocumentModel.cs" />
+    <Compile Include="GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoObjectStuff\GeoObject.cs" />
+    <Compile Include="Rendering\IRender.cs" />
+    <Compile Include="GeoObjectStuff\MaterializedGeoObject.cs" />
+    <Compile Include="GeoObjectStuff\MaterialProperties.cs" />
+    <Compile Include="Persistence\XML.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering\Renderer.cs" />
+    <Compile Include="Controller\WindowMouseKeyEvents.cs" />
+    <Compile Include="Rotation\SceneRotator.cs" />
+    <Compile Include="CNC_Turning\Machine_Stuff\TSVCalculator.cs" />
+    <Compile Include="third_party\Enterprise_Blocks\ExceptionSupport.cs" />
+    <Compile Include="third_party\Enterprise_Blocks\LoggingSupport.cs" />
+    <Compile Include="third_party\Enterprise_Blocks\OutputViewTraceListener.cs" />
+    <EmbeddedResource Include="GUI\ActionView.resx">
+      <DependentUpon>ActionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CodeExplorer.resx">
+      <DependentUpon>CodeExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Custom_Forms\OutputMessageControl.resx">
+      <DependentUpon>OutputMessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DebugView.resx">
+      <DependentUpon>DebugView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\OutputWindow.resx">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RoughPartSpecDialog.resx">
+      <DependentUpon>RoughPartSpecDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ToolDialog.resx">
+      <DependentUpon>ToolDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\RenderWindow.resx">
+      <DependentUpon>RenderWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\initializer.conf" />
+    <None Include="Resources\Programs\Bishop.cnc" />
+    <None Include="Resources\Programs\Bolt.cnc" />
+    <None Include="Resources\Programs\CircleMovement.cnc" />
+    <None Include="Resources\Programs\Pawn.cnc" />
+    <None Include="Resources\Programs\Queen.cnc" />
+    <None Include="Resources\Programs\SimpleCode.cnc" />
+    <None Include="Resources\Programs\ToolChange.cnc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakall_6323.png" />
+    <None Include="Resources\Gear.png" />
+    <None Include="Resources\Symbols_Play_32xLG.png" />
+    <None Include="Resources\Symbols_Stop_32xLG.png" />
+    <None Include="Resources\startwithoutdebugging_6556.png" />
+    <None Include="Resources\text_16xLG.png" />
+    <Content Include="Resources\Tools\CutOff.xml" />
+    <Content Include="Resources\Tools\Left.xml" />
+    <Content Include="Resources\Tools\LeftThin.xml" />
+    <Content Include="Resources\Tools\Neutral.xml" />
+    <Content Include="Resources\Tools\Right.xml" />
+    <Content Include="Resources\Tools\RightThin.xml" />
+    <Content Include="Resources\Tools\SimpleTool.xml" />
+    <Content Include="third_party\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="third_party\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="third_party\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+    <Content Include="third_party\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="third_party\OpenTK.Compatibility.dll" />
+    <Content Include="third_party\OpenTK.dll" />
+    <Content Include="third_party\OpenTK.GLControl.dll" />
+    <Content Include="third_party\WeifenLuo.WinFormsUI.Docking.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mesh\Geometry_Mesh3D.csproj">
+      <Project>{0ee28051-f9d7-4f1a-b056-f26b79a396b1}</Project>
+      <Name>Geometry_Mesh3D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

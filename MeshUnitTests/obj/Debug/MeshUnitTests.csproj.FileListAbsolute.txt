@@ -1,0 +1,11 @@
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\MeshUnitTests.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\MeshUnitTests.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\GeometryLib.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\Mesh.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\Mesh.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\GeometryLib.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\obj\Debug\MeshUnitTests.csprojResolveAssemblyReference.cache
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\obj\Debug\MeshUnitTests.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\obj\Debug\MeshUnitTests.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\2DMeshStructuresLib.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\MeshUnitTests\bin\Debug\2DMeshStructuresLib.pdb

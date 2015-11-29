@@ -1,0 +1,12 @@
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.dll.config
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\Mesh.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\2DMeshStructuresLib.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\3DMeshStructureLib.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\GeometryLib.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Geometry_Mesh3D.csprojResolveAssemblyReference.cache
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Mesh.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\obj\Debug\Mesh.pdb
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\2DMeshStructuresLib.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\3DMeshStructureLib.dll
+C:\Martin\Programmieren\Projekte\CAM_Project\Visual Studio\Turning\Mesh\bin\Debug\GeometryLib.dll

@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e1377f09-a0b3-4053-b7dc-63801ea2ad92" name="UMLClassDiagram1" linkedPackageId="9f6048a1-c329-4035-aff8-da011f8cb4b4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e3a09295-471a-4261-990a-bee87edc15df" name="GUI">
+        <elementDefinition Id="97011a11-e577-4605-a0a6-fdda231d216f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="ed06f359-93cb-4a70-883b-0a24f86007eb" name="MainForm" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bc034964-37f4-48ae-964d-0df9365137ae" />
+              <suppliersInternal>
+                <dependency Id="a274c6bc-ef17-4d3e-b581-be99d46433cb">
+                  <packageMoniker Id="0da92395-dc67-4d4b-9984-d0cc2266a5a8" LastKnownName="Machine_Stuff" />
+                  <elementDefinition Id="a39fe43b-cb22-4f4b-a6b6-ed4abe1f6014" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="0b7eb1c1-4907-43f3-846f-13576b3000ef" isDerived="false" sourceEndRoleName="MainForm" targetEndRoleName="Document" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="0d699c4a-f4a2-4992-b6d0-bde597d2f301" LastKnownName="Document" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="239983a7-a824-4124-9e43-3c06abca74c3" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="cf5ff404-f394-405b-952b-b8266ae2c9e6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ed81ac0e-3ee1-4a81-b420-41db7b4f7443" name="Document" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="960a0d62-ad92-4fa7-8372-44efae5d3b9c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="db1c57dd-a4f8-4019-8240-66c7efb28725" />
+                </association>
+                <association Id="1063a042-5317-4cdb-bca0-6401b4127cd9" isDerived="false" sourceEndRoleName="MainForm" targetEndRoleName="ToolBuilder" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ace7bd12-505b-4e91-a313-36cb41253c6d" LastKnownName="ToolBuilder" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9b20d967-a625-4da1-90f2-d4a337d722b1" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0ffe7450-8017-4182-84f8-723480a08727" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8202673e-b42a-4e24-ac48-8a4c1fbf8cfd" name="ToolBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4972f24b-c7bb-4c8b-b48e-882efe317993" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="705d5dd5-a5c0-4c38-b806-5c6df751082c" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d26775c9-7c92-4975-9cd5-61ecc6eefb54" name="RenderWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6e9fe7d6-8245-4ded-8214-0246ecea0152" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="262100d4-2b55-4073-b8c3-56a6bbb53e49" name="Model">
+        <elementDefinition Id="4636c2ea-31b1-40bd-b956-299d3fa4708d" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="0d699c4a-f4a2-4992-b6d0-bde597d2f301" name="Document" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7c85c711-e3e0-4fc6-ac51-9d3a023badec" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="39c1c2b6-efc7-408a-b9e0-56bb34419556" name="Persistence">
+        <elementDefinition Id="3d899e5f-d259-409f-80fa-a50786152efa" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="d19f453e-c03b-4938-8712-3e72445f0a50" name="XMLMeshReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b8e0d829-c1ae-4dc0-99ff-39f31e8aa509" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="87926443-f083-4283-b8c1-815146610f19" name="XMLToolReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="75d5ca3d-dc8f-4c55-8396-a6858e4b008d" />
+              <generalsInternal>
+                <generalization Id="b36d96f8-5fb4-4fbb-92e0-6b1f7f61dd33" isSubstitutable="false">
+                  <classMoniker Id="d19f453e-c03b-4938-8712-3e72445f0a50" LastKnownName="XMLMeshReader" />
+                  <elementDefinition Id="a3b5abe6-dc6e-4de9-901d-4f4165203f0a" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="6baa636c-997d-498e-a5c2-8882e06859d8" name="GeoObject_Builder">
+        <elementDefinition Id="f1c3a059-418d-4bc7-a4ae-86245fc27076" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="06e40c0a-b8b0-473b-82eb-36d768330ae9" name="AbstractGeoObjectBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="daa56272-a2c1-43be-b7bb-73cfbe98aa3f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3f460efc-f94f-45c9-b30b-fcc8327ba726" name="GeoObjectBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9c67cae2-1fc5-4234-a72f-6f3d08065432" />
+              <generalsInternal>
+                <generalization Id="b343f32c-529f-4f90-aac3-0b3ce2682876" isSubstitutable="false">
+                  <classMoniker Id="06e40c0a-b8b0-473b-82eb-36d768330ae9" LastKnownName="AbstractGeoObjectBuilder" />
+                  <elementDefinition Id="50c9028a-a8f4-4d53-aa98-c46a64f0c08b" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ace7bd12-505b-4e91-a313-36cb41253c6d" name="ToolBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="93e408c2-6ea2-4ed9-8551-dc6722a31057" />
+              <generalsInternal>
+                <generalization Id="b5b345a5-c89e-4803-9de3-fc10c4754eb8" isSubstitutable="false">
+                  <classMoniker Id="3f460efc-f94f-45c9-b30b-fcc8327ba726" LastKnownName="GeoObjectBuilder" />
+                  <elementDefinition Id="8e9d0342-134b-4cb7-a069-dc55087f1563" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="996cbf51-1064-450e-9abf-7443aa9b6394" isDerived="false" sourceEndRoleName="XMLGeoObjectBuilder" targetEndRoleName="MeshReader" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d19f453e-c03b-4938-8712-3e72445f0a50" LastKnownName="XMLMeshReader" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="079b623a-24ae-4e94-aaa0-98cef8ba1bb1" name="XMLGeoObjectBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="18816e67-5039-48b2-805c-64064e05c18f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d8a5be83-5b77-4ecd-bbdb-4b29576cf53b" name="MeshReader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7ac7d607-c384-4cfe-a3a7-e6015dd21acc" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="65298604-cc26-4d46-ab61-88e8e66b538a" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="de583666-a042-495f-9f5e-94f838e079d4" name="CNC_Turning">
+        <elementDefinition Id="dbf97da6-4383-4985-8a23-045cfba99505" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="ce43d6ff-a975-4fe0-8db6-e161820c1a26" name="Code">
+              <elementDefinition Id="60b0f5b8-5c50-448d-8f07-8898c8af0306" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="a7297d34-eb11-4503-940d-2a393cbeb8d5" name="ISO_Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="9f81824e-5420-4e24-8356-4f16cae7e56b" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="6ab7fa8f-813b-44ab-881f-da7161bd664a" name="Interpretation">
+              <elementDefinition Id="4a0be835-b7a9-4116-a6d0-d2ff529addbb" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="bf429e90-9106-4a7b-99da-0cab807a7181" name="Interpreter" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="498f924d-638d-416b-a7d8-6b6b721c0694" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="267ba910-c6d5-43e6-aad4-81e4d0b8791a" name="Tool">
+              <elementDefinition Id="3a4e2d91-7a2e-41e2-bc60-12fe924b28b5" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="739b13ad-2236-4014-8ab6-1999b45a33da" name="Tool" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="0a628a4d-8400-4553-8d6b-abf6a5245e55" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="3c3b289b-2638-4a4a-b623-6dd4821df993" name="ToolBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="1781f953-a2ec-4ee1-936d-8ff1ccba96ca" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="0da92395-dc67-4d4b-9984-d0cc2266a5a8" name="Machine_Stuff">
+              <elementDefinition Id="7886bcb6-a42c-4cf8-b025-058f512419b5" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="9e8b0104-614e-40b8-a88d-19c4edf153aa" name="TrajectoryCalculator" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7adc37fc-c6a0-47a1-bfd2-026db4b2c828" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="a6287bbb-908f-4a48-86a4-dc73757fad6f" name="TSVCalculator" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7b90990f-b99f-4d3c-80f6-abbcf277346b" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <package Id="98296ae9-44f1-42ef-8f6a-1bd8054000fc" name="Subtraction">
+                    <elementDefinition Id="af58cfdd-22ec-4991-8c86-ebde0ff7f8e0" />
+                    <packagedElements>
+                      <packageHasNamedElement>
+                        <class Id="25ca5079-cf54-4640-9e1c-d9124fb726b9" name="MeshSubtractor" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="8dce6269-a33f-4937-837a-d7408d95af72" />
+                          <targetEnds>
+                            <association Id="ffac5ea8-d5e3-48af-9ee0-32137c6149da" isDerived="false" sourceEndRoleName="MeshSubtractor" targetEndRoleName="GeoObject" isLeaf="false" isAbstract="false">
+                              <classMoniker Id="9fc5ed4e-0321-4c4d-ad33-a455042a8688" LastKnownName="GeoObject" />
+                              <relationshipOwnedElementsInternal>
+                                <associationHasOwnedEnds>
+                                  <memberEnd Id="8fa2c4af-eaef-4d54-b343-244ae24972cc" name="MeshSubtractor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                                    <elementDefinition Id="91c6f678-4f17-415c-a553-c743c54478bd" />
+                                  </memberEnd>
+                                </associationHasOwnedEnds>
+                                <associationHasOwnedEnds>
+                                  <memberEnd Id="0f2b3d9d-b41c-493b-94af-a90859929f96" name="GeoObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                                    <elementDefinition Id="187dff55-9b62-4860-88cb-e7d96ccf81f1" />
+                                  </memberEnd>
+                                </associationHasOwnedEnds>
+                              </relationshipOwnedElementsInternal>
+                              <elementDefinition Id="89663f60-6edf-4fcb-a936-642b68215032" />
+                            </association>
+                          </targetEnds>
+                        </class>
+                      </packageHasNamedElement>
+                      <packageHasNamedElement>
+                        <class Id="b679ae78-d3ac-439d-9b79-2a55fa3f3d7b" name="Node" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="83df83cf-4ec9-499e-9957-d77d9fc5a4d6" />
+                        </class>
+                      </packageHasNamedElement>
+                    </packagedElements>
+                  </package>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="f1cd73d0-832b-4920-b977-5767578112c0" name="Processor" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="b86186c2-eab6-41be-b876-1025253d8c97" />
+                    <targetEnds>
+                      <association Id="5d7e8fc6-f085-4297-b31d-52db3b40b403" isDerived="false" sourceEndRoleName="Processor" targetEndRoleName="TrajectoryCalculator" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="9e8b0104-614e-40b8-a88d-19c4edf153aa" LastKnownName="TrajectoryCalculator" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="e12edf66-9fa5-4859-9987-7f85fddd856d" name="Processor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="9290573b-8bcb-4528-b8ca-2efc3abb595a" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="13ffdfd3-cccf-4afc-b60e-3090eabc8491" name="TrajectoryCalculator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="68526cb2-a268-4816-9ef8-2ae44504fd56" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="27d47bf0-1300-4edd-bf87-fa2e5be2edfe" />
+                      </association>
+                      <association Id="c6f13124-0068-4472-94bb-2d2343867ce4" isDerived="false" sourceEndRoleName="Processor" targetEndRoleName="TSVCalculator" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="a6287bbb-908f-4a48-86a4-dc73757fad6f" LastKnownName="TSVCalculator" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="2a949c59-bc6b-4c0b-83cb-8f92ba1078ae" name="Processor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="fbd2c631-a664-4d3d-b24a-4eed6bc4fe69" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="e197606f-8652-4998-9f39-9a3e6c0168c6" name="TSVCalculator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="df05f312-a204-4570-8a58-f810a5132475" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="8ba7da6e-f74b-4b1d-87e5-683a6761fa7c" />
+                      </association>
+                      <association Id="43d01864-9851-4660-b471-163315d1cb27" isDerived="false" sourceEndRoleName="Processor" targetEndRoleName="MeshSubtractor" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="25ca5079-cf54-4640-9e1c-d9124fb726b9" LastKnownName="MeshSubtractor" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="81480733-41a5-4bbf-a76d-d87539e6b1ae" name="Processor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="a249bc80-92cf-4797-ba7f-0c89641d5470" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="f25c39a1-7830-4657-9676-2334e43fe9e4" name="MeshSubtractor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="6e3a1cc5-2696-40bc-8b17-a29214f15e84" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="5bb4a02f-6e2e-4406-b191-cc45958a4157" />
+                      </association>
+                      <association Id="28201b6d-9dac-4e6a-a648-1eadd8409264" isDerived="false" sourceEndRoleName="Processor" targetEndRoleName="Document" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="0d699c4a-f4a2-4992-b6d0-bde597d2f301" LastKnownName="Document" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="786f18bc-921c-4d30-a164-2fcdf4044076" name="Processor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="74e37fa4-4a67-4458-94a4-297506b8d6e6" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="fcbcf423-1ab2-4f2e-898f-4c88aa839174" name="Document" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="3201a38f-8017-4310-81c9-5f9d6d027fdf" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="5dafd5fe-c026-4fe9-89cc-8c3b08b22b0e" />
+                      </association>
+                    </targetEnds>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="0f581264-af83-4a79-b6b4-c20e2cf36333" name="Rendering">
+        <elementDefinition Id="b2db0779-429b-4373-8e45-0720f5cef6b0" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c799d3ca-c622-4fdf-b9a4-4f687339a5f8" name="Renderer" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="217b9278-fc73-4bde-a4d3-eb257b79bfe5" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3b0fc5f8-b6f4-46c4-a0d1-0821d6684889" name="OpenGLRenderer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4d116b3c-d6c0-4930-b677-8ead9b77469d" />
+              <generalsInternal>
+                <generalization Id="318e2d33-3d23-47f3-938e-424329547310" isSubstitutable="false">
+                  <classMoniker Id="c799d3ca-c622-4fdf-b9a4-4f687339a5f8" LastKnownName="Renderer" />
+                  <elementDefinition Id="c2e273a1-6749-415c-a4ab-534457c1c09f" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="1ca16976-702b-4503-9c3a-de8106e856c1" isDerived="false" sourceEndRoleName="OpenGLRenderer" targetEndRoleName="Processor" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f1cd73d0-832b-4920-b977-5767578112c0" LastKnownName="Processor" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="844e28e6-b02f-486f-95b7-7fd9593f04d1" name="OpenGLRenderer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6b6c5869-c974-4fb9-9494-3cfc74d0ddae" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ca5baa39-147a-4ae3-b6f8-c3e9c71dab5a" name="Processor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="56c3e5a5-52f4-4d81-aa41-ca8dbf3148ea" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="55839759-cd9b-4c9a-a3e8-d92f635078f0" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="d652be42-e1b6-49e6-bd1f-333f7812a2e9" name="IRender" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="09560b16-18ec-48b8-ae88-e38b750666e6" />
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ca93fa5a-3372-4555-99b7-e32ea2eb14c7" name="GeoObjectStuff">
+        <elementDefinition Id="4f834d7f-97f9-47a7-a4c8-019647d134ae" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="9fc5ed4e-0321-4c4d-ad33-a455042a8688" name="GeoObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3e5e3ea9-0c73-4da0-b77b-3843b6a202cc" />
+              <suppliersInternal>
+                <interfaceRealization Id="777344f2-b9dd-4353-8c87-f24a0ba8621a">
+                  <interfaceMoniker Id="d652be42-e1b6-49e6-bd1f-333f7812a2e9" LastKnownName="IRender" />
+                  <elementDefinition Id="6b540c0d-1f11-4793-934c-cb7e572d99b2" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bfb84a08-e914-42af-9f4b-c9d2538f8778" name="MaterializedGeoObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="df2436dc-b9bc-4694-8fda-59fd35683c1e" />
+              <generalsInternal>
+                <generalization Id="63d553f8-8e30-4dcb-9ab6-686447db192a" isSubstitutable="false">
+                  <classMoniker Id="9fc5ed4e-0321-4c4d-ad33-a455042a8688" LastKnownName="GeoObject" />
+                  <elementDefinition Id="d0458f49-f566-4fc5-9412-f7feb9f9e95a" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e795ad93-ac8e-41bc-b0e1-e2b4b780744a" name="Tool" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="dc46c5da-4dc2-4a3a-9490-99b39f82b997" />
+              <generalsInternal>
+                <generalization Id="ac492127-d003-468e-adb1-aadbf07899c7" isSubstitutable="false">
+                  <classMoniker Id="bfb84a08-e914-42af-9f4b-c9d2538f8778" LastKnownName="MaterializedGeoObject" />
+                  <elementDefinition Id="a7b1b9e7-114d-488f-9fd3-8ead4732b9b8" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="9f6048a1-c329-4035-aff8-da011f8cb4b4" name="ModelingProject">
+    <elementDefinition Id="844058a7-7129-4f58-a796-243ea2fc63e2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0cbe38ab-efd2-49a2-b10a-50764db3d75d">
+        <profileInstance Id="03cb81be-780b-4290-82bd-0c296082f51f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c6d1144d-1237-4b98-b09b-bfd09a3a19c7">
+        <profileInstance Id="36522e57-27fb-401a-8471-efce4bdc98d2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

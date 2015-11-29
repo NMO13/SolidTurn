@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f1c3a059-418d-4bc7-a4ae-86245fc27076"
+  name="GeoObject_Builder" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="daa56272-a2c1-43be-b7bb-73cfbe98aa3f"
+        name="AbstractGeoObjectBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9c67cae2-1fc5-4234-a72f-6f3d08065432"
+        name="GeoObjectBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="50c9028a-a8f4-4d53-aa98-c46a64f0c08b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="daa56272-a2c1-43be-b7bb-73cfbe98aa3f"
+              LastKnownName="AbstractGeoObjectBuilder"
+              LastKnownLocation="Package_2248.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="93e408c2-6ea2-4ed9-8551-dc6722a31057"
+        name="ToolBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8e9d0342-134b-4cb7-a069-dc55087f1563"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9c67cae2-1fc5-4234-a72f-6f3d08065432"
+              LastKnownName="GeoObjectBuilder"
+              LastKnownLocation="Package_2248.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="65298604-cc26-4d46-ab61-88e8e66b538a"
+            isDerived="false"
+            sourceEndRoleName="XMLGeoObjectBuilder"
+            targetEndRoleName="MeshReader"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b8e0d829-c1ae-4dc0-99ff-39f31e8aa509"
+              LastKnownName="XMLMeshReader"
+              LastKnownLocation="Package_2244.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18816e67-5039-48b2-805c-64064e05c18f"
+                  name="XMLGeoObjectBuilder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ac7d607-c384-4cfe-a3a7-e6015dd21acc"
+                  name="MeshReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

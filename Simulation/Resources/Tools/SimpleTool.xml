@@ -1,0 +1,75 @@
+<Tool Name="SimpleTool">
+	<Mesh>
+		<Vertices>
+			<Vertex>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Vertex>
+			<Vertex>
+				<X>5</X>
+				<Y>40</Y>
+				<Z>0.0</Z>
+			</Vertex>
+			<Vertex>
+				<X>-5</X>
+				<Y>40</Y>
+				<Z>0.0</Z>
+			</Vertex>
+			<Vertex>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>-5.0</Z>
+			</Vertex>
+			<Vertex>
+				<X>5</X>
+				<Y>40</Y>
+				<Z>-5.0</Z>
+			</Vertex>
+			<Vertex>
+				<X>-5</X>
+				<Y>40</Y>
+				<Z>-5.0</Z>
+			</Vertex>
+		</Vertices>
+		<Normals>
+			<Normal>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>1.0</Z>
+			</Normal>
+			<Normal>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>-1.0</Z>
+			</Normal>
+		</Normals>
+		<Polys>
+			<Polygon id="0">
+				<Verts Count="3">0 1 2</Verts>
+				<Normals>0 0 0</Normals>
+				<CuttingEdge>true</CuttingEdge>
+			</Polygon>
+			<Polygon id="1">
+				<Verts Count="3">3 5 4</Verts>
+				<Normals>1 1 1</Normals>
+				<CuttingEdge>false</CuttingEdge>
+			</Polygon>
+			<Polygon id="2">
+				<Verts Count="4">0 3 4 1</Verts>
+				<Normals>-1 -1 -1 -1</Normals>
+				<CuttingEdge>false</CuttingEdge>
+			</Polygon>
+			<Polygon id="3">
+				<Verts Count="4">3 0 2 5</Verts>
+				<Normals>-1 -1 -1 -1</Normals>
+				<CuttingEdge>false</CuttingEdge>
+			</Polygon>
+			<Polygon id="4">
+				<Verts Count="4">2 1 4 5</Verts>
+				<Normals>-1 -1 -1 -1</Normals>
+				<CuttingEdge>false</CuttingEdge>
+			</Polygon>
+		</Polys>
+	</Mesh>
+</Tool>

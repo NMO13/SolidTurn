@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4f834d7f-97f9-47a7-a4c8-019647d134ae"
+  name="GeoObjectStuff" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3e5e3ea9-0c73-4da0-b77b-3843b6a202cc"
+        name="GeoObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6b540c0d-1f11-4793-934c-cb7e572d99b2">
+            <interfaceMoniker
+              Id="09560b16-18ec-48b8-ae88-e38b750666e6"
+              LastKnownName="IRender"
+              LastKnownLocation="Package_2302.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df2436dc-b9bc-4694-8fda-59fd35683c1e"
+        name="MaterializedGeoObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d0458f49-f566-4fc5-9412-f7feb9f9e95a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3e5e3ea9-0c73-4da0-b77b-3843b6a202cc"
+              LastKnownName="GeoObject"
+              LastKnownLocation="Package_2303.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dc46c5da-4dc2-4a3a-9490-99b39f82b997"
+        name="Tool"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a7b1b9e7-114d-488f-9fd3-8ead4732b9b8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="df2436dc-b9bc-4694-8fda-59fd35683c1e"
+              LastKnownName="MaterializedGeoObject"
+              LastKnownLocation="Package_2303.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

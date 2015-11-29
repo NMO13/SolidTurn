@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="dbf97da6-4383-4985-8a23-045cfba99505"
+  name="CNC_Turning" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="60b0f5b8-5c50-448d-8f07-8898c8af0306"
+        LastKnownName="Code"
+        LastKnownLocation="Package1_2253.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4a0be835-b7a9-4116-a6d0-d2ff529addbb"
+        LastKnownName="Interpretation"
+        LastKnownLocation="Package2_2253.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3a4e2d91-7a2e-41e2-bc60-12fe924b28b5"
+        LastKnownName="Tool"
+        LastKnownLocation="Package_2254.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7886bcb6-a42c-4cf8-b025-058f512419b5"
+        LastKnownName="Machine_Stuff"
+        LastKnownLocation="Package_2255.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
