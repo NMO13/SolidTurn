@@ -18,7 +18,7 @@ The application is purely written in C# but uses the following third party libra
 - [This](https://github.com/govert/RobustGeometry.NET/wiki/Floating-point-on-.NET) floating point arithmetic classes , which are based on [this](http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf) paper, are used to remedy floating point errors.
 
 ## Notes
-- The simulation currently works just for concentric operations.
+- The simulation currently just works for concentric operations.
 - Demo videos are available here: https://www.youtube.com/channel/UCy5K1pMjOsn1kcPI2MHDD5w
 - If you like this project and want to contribute, then please don't hesitate to write me
 
