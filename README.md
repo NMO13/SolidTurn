@@ -20,7 +20,7 @@ The application is purely written in C# but uses the following third party libra
 
 ## Notes
 - The simulation currently just works for concentric operations.
-- Demo videos are available here: https://www.youtube.com/channel/UCy5K1pMjOsn1kcPI2MHDD5w
+- Demo videos are available here: https://www.youtube.com/watch?v=M8-RyrM5JeA&t=17s and https://www.youtube.com/watch?v=rCRGgySLI-k&t=13s
 - If you like this project and want to contribute, then please don't hesitate to write me
 
 ## The Author
